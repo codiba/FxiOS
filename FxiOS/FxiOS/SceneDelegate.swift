@@ -7,19 +7,24 @@
 
 import UIKit
 
-final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+final class SceneDelegate: UIResponder, UIWindowSceneDelegate, GetResolver {
 
     var window: UIWindow?
+    var coordinator: Coordinator?
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
+        guard let coordinator = returnResolver().resolve(LoginCoordinator.self) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        let rootView = ViewController()
+        let rootView = coordinator.start()
         let navigationController = UINavigationController(rootViewController: rootView)
+        
+        coordinator.navigationController = navigationController
+        
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         self.window = window
