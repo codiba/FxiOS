@@ -18,7 +18,8 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate, GetResolver {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         guard let coordinator = returnResolver().resolve(LoginCoordinator.self) else { return }
-        
+        self.coordinator = coordinator
+
         let window = UIWindow(windowScene: windowScene)
         let rootView = coordinator.start()
         let navigationController = UINavigationController(rootViewController: rootView)

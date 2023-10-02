@@ -8,10 +8,12 @@
 
 public protocol AuthenticationRepositoryProtocol {
     func tryLogin(request: LoginRequestDTO) async throws -> LoginResponseDTO
+    func tryRegister(request: RegisterRequestDTO) async throws -> RegisterResponseDTO
 }
 
 public protocol AuthenticationRemoteAdapter {
     func login(request: LoginRequestDTO) async throws -> LoginResponseDTO
+    func register(request: RegisterRequestDTO) async throws -> RegisterResponseDTO
 }
 
 public final class AuthenticationRepository: AuthenticationRepositoryProtocol {
@@ -23,6 +25,10 @@ public final class AuthenticationRepository: AuthenticationRepositoryProtocol {
     
     public func tryLogin(request: LoginRequestDTO) async throws -> LoginResponseDTO {
         try await authRemote.login(request: request)
+    }
+    
+    public func tryRegister(request: RegisterRequestDTO) async throws -> RegisterResponseDTO {
+        try await authRemote.register(request: request)
     }
 }
 

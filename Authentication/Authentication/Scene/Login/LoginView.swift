@@ -15,11 +15,11 @@ public enum LoginAction {
 public struct LoginView: View {
     
     @ObservedObject private var viewModel: LoginViewModel
-    private let action: (LoginAction) -> Void
+    private let router: LoginRouterProtocol
     
-    public init(viewModel: LoginViewModel, action closure: @escaping (LoginAction) -> Void) {
+    public init(viewModel: LoginViewModel, router: LoginRouterProtocol) {
         self.viewModel = viewModel
-        self.action = closure
+        self.router = router
     }
     
     public var body: some View {
@@ -35,6 +35,7 @@ public struct LoginView: View {
             Button {
                 Task {
                     await viewModel.tryLogin()
+                    router.navigateHome()
                 }
             } label: {
                 Text("Giriş")
@@ -42,32 +43,25 @@ public struct LoginView: View {
             }
             .buttonStyle(.borderedProminent)
             .padding()
+            
+            Button {
+                router.navigateRegister()
+            } label: {
+                HStack(spacing: 5) {
+                    Text("Hesabın yok mu?")
+                        .foregroundColor(.gray)
+                    Text("Hemen Kayıt Ol!")
+                        .foregroundColor(.blue)
+                }
+                .font(.callout)
+                .bold()
+                .frame(maxWidth: .infinity, alignment: .leading)
+         
+            }
+            .buttonStyle(.borderless)
         }
         .padding()
-    }
-    
-}
-
-
-struct ViewFactory {
-    
-    
-    func getLogin() -> LoginView {
-        
-        let apiAdapter = MockApiAdapter()
-        let repository = AuthenticationRepository(authRemote: apiAdapter)
-        let loginUseCase = LoginUseCase(repository: repository)
-        let viewModel = LoginViewModel(loginUseCase: loginUseCase)
-        let view = LoginView(viewModel: viewModel, action: { _ in })
-        
-        return view
-    }
-    
-    
-    struct MockApiAdapter: AuthenticationRemoteAdapter {
-        func login(request: LoginRequestDTO) async throws -> LoginResponseDTO {
-            throw NSError(domain: "test", code: 1)
-        }
+        .navigationTitle("Giriş")
     }
 }
 

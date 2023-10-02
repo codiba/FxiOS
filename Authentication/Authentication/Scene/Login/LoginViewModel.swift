@@ -13,9 +13,9 @@ public final class LoginViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
     
-    private let loginUseCase: any LoginUseCaseProtocol
+    private let loginUseCase: LoginUseCaseProtocol
     
-    public init(loginUseCase: any LoginUseCaseProtocol) {
+    public init(loginUseCase: LoginUseCaseProtocol) {
         self.loginUseCase = loginUseCase
     }
     
@@ -25,10 +25,5 @@ public final class LoginViewModel: ObservableObject {
         } catch {
             print(error)
         }
-    }
-    
-    func validateEmail() {
-        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegex)
     }
 }

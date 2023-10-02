@@ -14,6 +14,19 @@
 		4A2514262ACB0E090051BD92 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514252ACB0E090051BD92 /* LoginCoordinator.swift */; };
 		4A25149E2ACB48370051BD92 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25149D2ACB48370051BD92 /* Assembler.swift */; };
 		4A2514A32ACB52DF0051BD92 /* LoginAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514A22ACB52DF0051BD92 /* LoginAssembler.swift */; };
+		4A2514B72ACB70CF0051BD92 /* RegisterAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514B62ACB70CF0051BD92 /* RegisterAssembler.swift */; };
+		4A2514BC2ACB70F90051BD92 /* AuthError+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514BB2ACB70F90051BD92 /* AuthError+init.swift */; };
+		4A2514BF2ACB71220051BD92 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514BE2ACB71220051BD92 /* FirebaseAuthManager.swift */; };
+		4A2514C12ACB71610051BD92 /* AuthenticationAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514C02ACB71610051BD92 /* AuthenticationAssembler.swift */; };
+		4A2514C82ACB71FD0051BD92 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514C72ACB71FD0051BD92 /* RegisterCoordinator.swift */; };
+		4A2514CA2ACB721A0051BD92 /* Coordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514C92ACB721A0051BD92 /* Coordinators.swift */; };
+		4A2514CD2ACB723D0051BD92 /* View+AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514CC2ACB723D0051BD92 /* View+AnyView.swift */; };
+		4A2514D02ACB74D90051BD92 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514CF2ACB74D90051BD92 /* Coordinator.swift */; };
+		4A2514D22ACB74FB0051BD92 /* HostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514D12ACB74FB0051BD92 /* HostingViewController.swift */; };
+		4A2514D42ACB75180051BD92 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514D32ACB75170051BD92 /* BaseCoordinator.swift */; };
+		4A2514D82ACB75E30051BD92 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514D72ACB75E30051BD92 /* BaseRouter.swift */; };
+		4A2514DA2ACB75F40051BD92 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514D92ACB75F40051BD92 /* Router.swift */; };
+		4A2514DC2ACB75FF0051BD92 /* CoordinatorRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514DB2ACB75FF0051BD92 /* CoordinatorRepresentable.swift */; };
 		4A40B4072ACAE83400BC6256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40B4062ACAE83400BC6256 /* AppDelegate.swift */; };
 		4A40B4092ACAE83400BC6256 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40B4082ACAE83400BC6256 /* SceneDelegate.swift */; };
 		4A40B4102ACAE83500BC6256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A40B40F2ACAE83500BC6256 /* Assets.xcassets */; };
@@ -45,6 +58,19 @@
 		4A2514252ACB0E090051BD92 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		4A25149D2ACB48370051BD92 /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
 		4A2514A22ACB52DF0051BD92 /* LoginAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAssembler.swift; sourceTree = "<group>"; };
+		4A2514B62ACB70CF0051BD92 /* RegisterAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAssembler.swift; sourceTree = "<group>"; };
+		4A2514BB2ACB70F90051BD92 /* AuthError+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthError+init.swift"; sourceTree = "<group>"; };
+		4A2514BE2ACB71220051BD92 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
+		4A2514C02ACB71610051BD92 /* AuthenticationAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationAssembler.swift; sourceTree = "<group>"; };
+		4A2514C72ACB71FD0051BD92 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		4A2514C92ACB721A0051BD92 /* Coordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinators.swift; sourceTree = "<group>"; };
+		4A2514CC2ACB723D0051BD92 /* View+AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+AnyView.swift"; sourceTree = "<group>"; };
+		4A2514CF2ACB74D90051BD92 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4A2514D12ACB74FB0051BD92 /* HostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingViewController.swift; sourceTree = "<group>"; };
+		4A2514D32ACB75170051BD92 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		4A2514D72ACB75E30051BD92 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		4A2514D92ACB75F40051BD92 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4A2514DB2ACB75FF0051BD92 /* CoordinatorRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorRepresentable.swift; sourceTree = "<group>"; };
 		4A40B4032ACAE83400BC6256 /* FxiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FxiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A40B4062ACAE83400BC6256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A40B4082ACAE83400BC6256 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,8 +121,83 @@
 			isa = PBXGroup;
 			children = (
 				4A2514A22ACB52DF0051BD92 /* LoginAssembler.swift */,
+				4A2514B62ACB70CF0051BD92 /* RegisterAssembler.swift */,
+				4A2514C02ACB71610051BD92 /* AuthenticationAssembler.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		4A2514B82ACB70D70051BD92 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4A2514CB2ACB72320051BD92 /* View */,
+				4A2514BD2ACB71130051BD92 /* Authentication */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		4A2514BD2ACB71130051BD92 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4A2514C42ACB71D10051BD92 /* Extension */,
+				4A2514C32ACB71C20051BD92 /* Adapter */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		4A2514C22ACB71AE0051BD92 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4A2514C52ACB71E60051BD92 /* Authentication */,
+				4A2514C92ACB721A0051BD92 /* Coordinators.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4A2514C32ACB71C20051BD92 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				4A2514BE2ACB71220051BD92 /* FirebaseAuthManager.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		4A2514C42ACB71D10051BD92 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4A2514BB2ACB70F90051BD92 /* AuthError+init.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4A2514C52ACB71E60051BD92 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4A2514252ACB0E090051BD92 /* LoginCoordinator.swift */,
+				4A2514C72ACB71FD0051BD92 /* RegisterCoordinator.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		4A2514CB2ACB72320051BD92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A2514CC2ACB723D0051BD92 /* View+AnyView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A2514CE2ACB74D20051BD92 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4A2514CF2ACB74D90051BD92 /* Coordinator.swift */,
+				4A2514D12ACB74FB0051BD92 /* HostingViewController.swift */,
+				4A2514D32ACB75170051BD92 /* BaseCoordinator.swift */,
+				4A2514D72ACB75E30051BD92 /* BaseRouter.swift */,
+				4A2514D92ACB75F40051BD92 /* Router.swift */,
+				4A2514DB2ACB75FF0051BD92 /* CoordinatorRepresentable.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		4A40B3FA2ACAE83400BC6256 = {
@@ -119,7 +220,10 @@
 		4A40B4052ACAE83400BC6256 /* FxiOS */ = {
 			isa = PBXGroup;
 			children = (
+				4A2514CE2ACB74D20051BD92 /* Base */,
+				4A2514C22ACB71AE0051BD92 /* Coordinator */,
 				4A2514222ACB0A680051BD92 /* Injection */,
+				4A2514B82ACB70D70051BD92 /* Util */,
 				4A40B4272ACAF19B00BC6256 /* FxiOS.entitlements */,
 				4A40B4252ACAEB6700BC6256 /* GoogleService-Info.plist */,
 				4A40B4062ACAE83400BC6256 /* AppDelegate.swift */,
@@ -127,7 +231,6 @@
 				4A40B40F2ACAE83500BC6256 /* Assets.xcassets */,
 				4A40B4112ACAE83500BC6256 /* LaunchScreen.storyboard */,
 				4A40B4142ACAE83500BC6256 /* Info.plist */,
-				4A2514252ACB0E090051BD92 /* LoginCoordinator.swift */,
 			);
 			path = FxiOS;
 			sourceTree = "<group>";
@@ -220,9 +323,22 @@
 			files = (
 				4A2514262ACB0E090051BD92 /* LoginCoordinator.swift in Sources */,
 				4A40B4072ACAE83400BC6256 /* AppDelegate.swift in Sources */,
+				4A2514D02ACB74D90051BD92 /* Coordinator.swift in Sources */,
+				4A2514C12ACB71610051BD92 /* AuthenticationAssembler.swift in Sources */,
+				4A2514BF2ACB71220051BD92 /* FirebaseAuthManager.swift in Sources */,
 				4A25149E2ACB48370051BD92 /* Assembler.swift in Sources */,
+				4A2514B72ACB70CF0051BD92 /* RegisterAssembler.swift in Sources */,
+				4A2514D82ACB75E30051BD92 /* BaseRouter.swift in Sources */,
 				4A40B4092ACAE83400BC6256 /* SceneDelegate.swift in Sources */,
+				4A2514BC2ACB70F90051BD92 /* AuthError+init.swift in Sources */,
+				4A2514DA2ACB75F40051BD92 /* Router.swift in Sources */,
+				4A2514CA2ACB721A0051BD92 /* Coordinators.swift in Sources */,
+				4A2514D42ACB75180051BD92 /* BaseCoordinator.swift in Sources */,
 				4A2514A32ACB52DF0051BD92 /* LoginAssembler.swift in Sources */,
+				4A2514CD2ACB723D0051BD92 /* View+AnyView.swift in Sources */,
+				4A2514C82ACB71FD0051BD92 /* RegisterCoordinator.swift in Sources */,
+				4A2514D22ACB74FB0051BD92 /* HostingViewController.swift in Sources */,
+				4A2514DC2ACB75FF0051BD92 /* CoordinatorRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +485,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,7 +517,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -21,8 +21,9 @@ public struct LoginUseCase: LoginUseCaseProtocol {
         let response = try await repository.tryLogin(request: .init(email: request.email, password: request.password))
         return .init(token: response.token)
     }
-}
-
-public enum LoginError: Error {
-    case emailTextValidationError
+    
+    func validateEmail() {
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegex)
+    }
 }

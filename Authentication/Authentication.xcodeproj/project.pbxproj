@@ -20,6 +20,16 @@
 		4A2514352ACB38920051BD92 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514342ACB38920051BD92 /* LoginRequest.swift */; };
 		4A2514372ACB38970051BD92 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514362ACB38970051BD92 /* LoginResponse.swift */; };
 		4A2514A02ACB51C90051BD92 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25149F2ACB51C90051BD92 /* AuthError.swift */; };
+		4A2514A52ACB6DC50051BD92 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514A42ACB6DC50051BD92 /* RegisterView.swift */; };
+		4A2514A72ACB6DD70051BD92 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514A62ACB6DD70051BD92 /* RegisterViewModel.swift */; };
+		4A2514AA2ACB6EE80051BD92 /* RegisterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514A92ACB6EE80051BD92 /* RegisterUseCase.swift */; };
+		4A2514AE2ACB6F170051BD92 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514AD2ACB6F170051BD92 /* RegisterRequest.swift */; };
+		4A2514B02ACB6F1F0051BD92 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514AF2ACB6F1F0051BD92 /* RegisterResponse.swift */; };
+		4A2514B32ACB6F6A0051BD92 /* RegisterRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514B22ACB6F6A0051BD92 /* RegisterRequestDTO.swift */; };
+		4A2514B52ACB6F7C0051BD92 /* RegisterResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514B42ACB6F7C0051BD92 /* RegisterResponseDTO.swift */; };
+		4A2514D62ACB756C0051BD92 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514D52ACB756C0051BD92 /* LoginRouter.swift */; };
+		4A2514DE2ACB77540051BD92 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514DD2ACB77540051BD92 /* RegisterRouter.swift */; };
+		4A2514E02ACB78060051BD92 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514DF2ACB78060051BD92 /* ViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +58,16 @@
 		4A2514362ACB38970051BD92 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		4A2514912ACB45640051BD92 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A25149F2ACB51C90051BD92 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
+		4A2514A42ACB6DC50051BD92 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		4A2514A62ACB6DD70051BD92 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		4A2514A92ACB6EE80051BD92 /* RegisterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCase.swift; sourceTree = "<group>"; };
+		4A2514AD2ACB6F170051BD92 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		4A2514AF2ACB6F1F0051BD92 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		4A2514B22ACB6F6A0051BD92 /* RegisterRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestDTO.swift; sourceTree = "<group>"; };
+		4A2514B42ACB6F7C0051BD92 /* RegisterResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponseDTO.swift; sourceTree = "<group>"; };
+		4A2514D52ACB756C0051BD92 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		4A2514DD2ACB77540051BD92 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		4A2514DF2ACB78060051BD92 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +133,7 @@
 			children = (
 				4A25140F2ACAFB8F0051BD92 /* LoginView.swift */,
 				4A2514112ACAFCE00051BD92 /* LoginViewModel.swift */,
+				4A2514D52ACB756C0051BD92 /* LoginRouter.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -120,6 +141,9 @@
 		4A25140E2ACAFB750051BD92 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				4A2514A42ACB6DC50051BD92 /* RegisterView.swift */,
+				4A2514A62ACB6DD70051BD92 /* RegisterViewModel.swift */,
+				4A2514DD2ACB77540051BD92 /* RegisterRouter.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -129,6 +153,7 @@
 			children = (
 				4A25140E2ACAFB750051BD92 /* Register */,
 				4A25140D2ACAFB670051BD92 /* Login */,
+				4A2514DF2ACB78060051BD92 /* ViewFactory.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -136,7 +161,9 @@
 		4A2514272ACB37230051BD92 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				4A25142B2ACB37D30051BD92 /* Login */,
+				4A25142C2ACB37D80051BD92 /* Model */,
+				4A25141A2ACB034A0051BD92 /* LoginUseCase.swift */,
+				4A2514A92ACB6EE80051BD92 /* RegisterUseCase.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -153,26 +180,18 @@
 		4A25142A2ACB37440051BD92 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
+				4A2514B12ACB6F5D0051BD92 /* Register */,
 				4A25142D2ACB37E60051BD92 /* Login */,
 				4A25149F2ACB51C90051BD92 /* AuthError.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
 		};
-		4A25142B2ACB37D30051BD92 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				4A25142C2ACB37D80051BD92 /* Model */,
-				4A25141A2ACB034A0051BD92 /* LoginUseCase.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		4A25142C2ACB37D80051BD92 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4A2514342ACB38920051BD92 /* LoginRequest.swift */,
-				4A2514362ACB38970051BD92 /* LoginResponse.swift */,
+				4A2514AC2ACB6F0B0051BD92 /* Register */,
+				4A2514AB2ACB6F040051BD92 /* Login */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,6 +211,33 @@
 				4A2514912ACB45640051BD92 /* Core.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A2514AB2ACB6F040051BD92 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4A2514342ACB38920051BD92 /* LoginRequest.swift */,
+				4A2514362ACB38970051BD92 /* LoginResponse.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4A2514AC2ACB6F0B0051BD92 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				4A2514AD2ACB6F170051BD92 /* RegisterRequest.swift */,
+				4A2514AF2ACB6F1F0051BD92 /* RegisterResponse.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		4A2514B12ACB6F5D0051BD92 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				4A2514B22ACB6F6A0051BD92 /* RegisterRequestDTO.swift */,
+				4A2514B42ACB6F7C0051BD92 /* RegisterResponseDTO.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,14 +349,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A2514AA2ACB6EE80051BD92 /* RegisterUseCase.swift in Sources */,
+				4A2514A52ACB6DC50051BD92 /* RegisterView.swift in Sources */,
 				4A2514102ACAFB8F0051BD92 /* LoginView.swift in Sources */,
+				4A2514B02ACB6F1F0051BD92 /* RegisterResponse.swift in Sources */,
 				4A2513F82ACAFB510051BD92 /* Authentication.docc in Sources */,
+				4A2514AE2ACB6F170051BD92 /* RegisterRequest.swift in Sources */,
 				4A2514372ACB38970051BD92 /* LoginResponse.swift in Sources */,
+				4A2514E02ACB78060051BD92 /* ViewFactory.swift in Sources */,
 				4A2514312ACB38300051BD92 /* LoginResponseDTO.swift in Sources */,
+				4A2514B32ACB6F6A0051BD92 /* RegisterRequestDTO.swift in Sources */,
 				4A2514A02ACB51C90051BD92 /* AuthError.swift in Sources */,
 				4A2514122ACAFCE00051BD92 /* LoginViewModel.swift in Sources */,
+				4A2514A72ACB6DD70051BD92 /* RegisterViewModel.swift in Sources */,
 				4A25142F2ACB380B0051BD92 /* LoginRequestDTO.swift in Sources */,
 				4A25141B2ACB034A0051BD92 /* LoginUseCase.swift in Sources */,
+				4A2514D62ACB756C0051BD92 /* LoginRouter.swift in Sources */,
+				4A2514DE2ACB77540051BD92 /* RegisterRouter.swift in Sources */,
+				4A2514B52ACB6F7C0051BD92 /* RegisterResponseDTO.swift in Sources */,
 				4A2514332ACB38550051BD92 /* AuthenticationRepository.swift in Sources */,
 				4A2514352ACB38920051BD92 /* LoginRequest.swift in Sources */,
 			);
@@ -469,7 +525,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -501,7 +557,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
