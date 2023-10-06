@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A2514152ACB02A00051BD92 /* Authentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2514142ACB02A00051BD92 /* Authentication.framework */; };
-		4A2514162ACB02A00051BD92 /* Authentication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2514142ACB02A00051BD92 /* Authentication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A25141E2ACB048A0051BD92 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 4A25141D2ACB048A0051BD92 /* Swinject */; };
 		4A2514212ACB04A90051BD92 /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = 4A2514202ACB04A90051BD92 /* SwinjectAutoregistration */; };
 		4A2514262ACB0E090051BD92 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514252ACB0E090051BD92 /* LoginCoordinator.swift */; };
@@ -38,8 +36,10 @@
 		4A40B4242ACAEB1D00BC6256 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 4A40B4232ACAEB1D00BC6256 /* FirebaseMessaging */; };
 		4A40B4262ACAEB6700BC6256 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A40B4252ACAEB6700BC6256 /* GoogleService-Info.plist */; };
 		4A90BCF32AD03D0E006ACA77 /* DefaultHttpPropertyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BCF22AD03D0E006ACA77 /* DefaultHttpPropertyProvider.swift */; };
-		4A90BCF52AD03D2E006ACA77 /* FxNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90BCF42AD03D2E006ACA77 /* FxNetwork.framework */; };
-		4A90BCF62AD03D2E006ACA77 /* FxNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90BCF42AD03D2E006ACA77 /* FxNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A90BCF92AD03E90006ACA77 /* Authentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90BCF72AD03E90006ACA77 /* Authentication.framework */; };
+		4A90BCFA2AD03E90006ACA77 /* Authentication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90BCF72AD03E90006ACA77 /* Authentication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A90BCFB2AD03E90006ACA77 /* FxNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90BCF82AD03E90006ACA77 /* FxNetwork.framework */; };
+		4A90BCFC2AD03E90006ACA77 /* FxNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90BCF82AD03E90006ACA77 /* FxNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,8 +49,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4A2514162ACB02A00051BD92 /* Authentication.framework in Embed Frameworks */,
-				4A90BCF62AD03D2E006ACA77 /* FxNetwork.framework in Embed Frameworks */,
+				4A90BCFA2AD03E90006ACA77 /* Authentication.framework in Embed Frameworks */,
+				4A90BCFC2AD03E90006ACA77 /* FxNetwork.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +58,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4A2514142ACB02A00051BD92 /* Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2514252ACB0E090051BD92 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		4A25149D2ACB48370051BD92 /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
 		4A2514A22ACB52DF0051BD92 /* LoginAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAssembler.swift; sourceTree = "<group>"; };
@@ -84,7 +83,8 @@
 		4A40B4252ACAEB6700BC6256 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4A40B4272ACAF19B00BC6256 /* FxiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FxiOS.entitlements; sourceTree = "<group>"; };
 		4A90BCF22AD03D0E006ACA77 /* DefaultHttpPropertyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHttpPropertyProvider.swift; sourceTree = "<group>"; };
-		4A90BCF42AD03D2E006ACA77 /* FxNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FxNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A90BCF72AD03E90006ACA77 /* Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A90BCF82AD03E90006ACA77 /* FxNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FxNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,12 +92,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A90BCF52AD03D2E006ACA77 /* FxNetwork.framework in Frameworks */,
-				4A2514152ACB02A00051BD92 /* Authentication.framework in Frameworks */,
+				4A90BCFB2AD03E90006ACA77 /* FxNetwork.framework in Frameworks */,
 				4A40B41E2ACAEB1D00BC6256 /* FirebaseAnalyticsSwift in Frameworks */,
 				4A25141E2ACB048A0051BD92 /* Swinject in Frameworks */,
 				4A2514212ACB04A90051BD92 /* SwinjectAutoregistration in Frameworks */,
 				4A40B4222ACAEB1D00BC6256 /* FirebaseCrashlytics in Frameworks */,
+				4A90BCF92AD03E90006ACA77 /* Authentication.framework in Frameworks */,
 				4A40B4242ACAEB1D00BC6256 /* FirebaseMessaging in Frameworks */,
 				4A40B4202ACAEB1D00BC6256 /* FirebaseAuth in Frameworks */,
 				4A40B41C2ACAEB1D00BC6256 /* FirebaseAnalytics in Frameworks */,
@@ -110,8 +110,8 @@
 		4A2514132ACB02A00051BD92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A90BCF42AD03D2E006ACA77 /* FxNetwork.framework */,
-				4A2514142ACB02A00051BD92 /* Authentication.framework */,
+				4A90BCF72AD03E90006ACA77 /* Authentication.framework */,
+				4A90BCF82AD03E90006ACA77 /* FxNetwork.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -306,7 +306,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					4A40B4022ACAE83400BC6256 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -426,6 +426,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -486,6 +487,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
