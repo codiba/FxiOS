@@ -37,6 +37,9 @@
 		4A40B4222ACAEB1D00BC6256 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4A40B4212ACAEB1D00BC6256 /* FirebaseCrashlytics */; };
 		4A40B4242ACAEB1D00BC6256 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 4A40B4232ACAEB1D00BC6256 /* FirebaseMessaging */; };
 		4A40B4262ACAEB6700BC6256 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A40B4252ACAEB6700BC6256 /* GoogleService-Info.plist */; };
+		4A90BCF32AD03D0E006ACA77 /* DefaultHttpPropertyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BCF22AD03D0E006ACA77 /* DefaultHttpPropertyProvider.swift */; };
+		4A90BCF52AD03D2E006ACA77 /* FxNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90BCF42AD03D2E006ACA77 /* FxNetwork.framework */; };
+		4A90BCF62AD03D2E006ACA77 /* FxNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90BCF42AD03D2E006ACA77 /* FxNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +50,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4A2514162ACB02A00051BD92 /* Authentication.framework in Embed Frameworks */,
+				4A90BCF62AD03D2E006ACA77 /* FxNetwork.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +83,8 @@
 		4A40B4142ACAE83500BC6256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A40B4252ACAEB6700BC6256 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4A40B4272ACAF19B00BC6256 /* FxiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FxiOS.entitlements; sourceTree = "<group>"; };
+		4A90BCF22AD03D0E006ACA77 /* DefaultHttpPropertyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHttpPropertyProvider.swift; sourceTree = "<group>"; };
+		4A90BCF42AD03D2E006ACA77 /* FxNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FxNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A90BCF52AD03D2E006ACA77 /* FxNetwork.framework in Frameworks */,
 				4A2514152ACB02A00051BD92 /* Authentication.framework in Frameworks */,
 				4A40B41E2ACAEB1D00BC6256 /* FirebaseAnalyticsSwift in Frameworks */,
 				4A25141E2ACB048A0051BD92 /* Swinject in Frameworks */,
@@ -103,6 +110,7 @@
 		4A2514132ACB02A00051BD92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A90BCF42AD03D2E006ACA77 /* FxNetwork.framework */,
 				4A2514142ACB02A00051BD92 /* Authentication.framework */,
 			);
 			name = Frameworks;
@@ -111,6 +119,7 @@
 		4A2514222ACB0A680051BD92 /* Injection */ = {
 			isa = PBXGroup;
 			children = (
+				4A90BCEF2AD03CE1006ACA77 /* Network */,
 				4A2514A12ACB52CF0051BD92 /* Authentication */,
 				4A25149D2ACB48370051BD92 /* Assembler.swift */,
 			);
@@ -220,8 +229,8 @@
 		4A40B4052ACAE83400BC6256 /* FxiOS */ = {
 			isa = PBXGroup;
 			children = (
-				4A2514CE2ACB74D20051BD92 /* Base */,
-				4A2514C22ACB71AE0051BD92 /* Coordinator */,
+				4A90BCF12AD03CFB006ACA77 /* Network */,
+				4A90BCF02AD03CEE006ACA77 /* Presentation */,
 				4A2514222ACB0A680051BD92 /* Injection */,
 				4A2514B82ACB70D70051BD92 /* Util */,
 				4A40B4272ACAF19B00BC6256 /* FxiOS.entitlements */,
@@ -233,6 +242,30 @@
 				4A40B4142ACAE83500BC6256 /* Info.plist */,
 			);
 			path = FxiOS;
+			sourceTree = "<group>";
+		};
+		4A90BCEF2AD03CE1006ACA77 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4A90BCF02AD03CEE006ACA77 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4A2514CE2ACB74D20051BD92 /* Base */,
+				4A2514C22ACB71AE0051BD92 /* Coordinator */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4A90BCF12AD03CFB006ACA77 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4A90BCF22AD03D0E006ACA77 /* DefaultHttpPropertyProvider.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A90BCF32AD03D0E006ACA77 /* DefaultHttpPropertyProvider.swift in Sources */,
 				4A2514262ACB0E090051BD92 /* LoginCoordinator.swift in Sources */,
 				4A40B4072ACAE83400BC6256 /* AppDelegate.swift in Sources */,
 				4A2514D02ACB74D90051BD92 /* Coordinator.swift in Sources */,
