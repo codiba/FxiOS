@@ -33,10 +33,13 @@ public struct LoginView: View {
             
             TextField("E-posta", text: $viewModel.email)
                 .textFieldStyle(.roundedBorder)
+                .autocapitalization(.none)
+                .keyboardType(.emailAddress)
 
             SecureField("Şifre", text: $viewModel.password)
                 .textFieldStyle(.roundedBorder)
-            
+                .autocapitalization(.none)
+
             HStack {
                 Spacer()
                 Button(action: {
