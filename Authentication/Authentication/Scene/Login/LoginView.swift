@@ -23,47 +23,73 @@ public struct LoginView: View {
     }
     
     public var body: some View {
-        VStack {
-            Group {
-                TextField("E-posta", text: $viewModel.email)
-                .autocapitalization(.none)
-                .keyboardType(.emailAddress)
-                
-                SecureField("Şifre", text: $viewModel.password)
-            }
-            .textFieldStyle(.roundedBorder)
-            Button {
-                Task {
-                    await viewModel.tryLogin()
-                    router.navigateHome()
-                }
-            } label: {
-                Text("Giriş")
-                    .frame(maxWidth: .infinity)
-            }
-            .buttonStyle(.borderedProminent)
-            .padding()
+        VStack(spacing: 15) {
+            Image(systemName: "person.crop.circle.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 60, height: 60)
+                .foregroundColor(.blue)
+                .padding(.bottom, 30)
             
-            Button {
-                router.navigateRegister()
-            } label: {
-                HStack(spacing: 5) {
-                    Text("Hesabın yok mu?")
+            TextField("E-posta", text: $viewModel.email)
+                .textFieldStyle(.roundedBorder)
+
+            SecureField("Şifre", text: $viewModel.password)
+                .textFieldStyle(.roundedBorder)
+            
+            HStack {
+                Spacer()
+                Button(action: {
+                }) {
+                    Text("Şifremi unuttum")
                         .foregroundColor(.gray)
-                    Text("Hemen Kayıt Ol!")
-                        .foregroundColor(.blue)
+                        .underline()
+                        .font(.caption)
                 }
-                .font(.callout)
-                .bold()
-                .frame(maxWidth: .infinity, alignment: .leading)
-         
+                .padding(.top, 5)
             }
-            .buttonStyle(.borderless)
+            .padding(.horizontal, 20)
+            
+            Button(action: {
+                viewModel.tryLogin()
+            }) {
+                Text("Giriş Yap")
+                    .foregroundColor(.white)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.blue.opacity(0.7))
+                    .cornerRadius(10)
+            }
+            .padding(.top, 20)
+            
+            Button(action: {
+                router.navigateRegister()
+            }) {
+                HStack(spacing: 0) {
+                    Text("Henüz hesabın yok mu?")
+                        .foregroundColor(.gray)
+                    Text(" Kayıt Ol!")
+                    Spacer()
+                }
+                
+            }
+            .padding(.top, 10)
+            .padding(.bottom, 40)
         }
-        .padding()
-        .navigationTitle("Giriş")
+        .cornerRadius(15)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .padding(.horizontal, 15)
+        .onChange(of: viewModel.loginSuccess, perform: { newValue in
+            guard newValue else { return }
+            router.navigateHome()
+        })
+        .onChange(of: viewModel.loginError, perform: { newValue in
+            guard let error = newValue else { return }
+            print(error)
+        })
     }
 }
+
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {

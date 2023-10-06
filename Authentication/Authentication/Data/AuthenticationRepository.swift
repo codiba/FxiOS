@@ -24,7 +24,7 @@ public final class AuthenticationRepository: AuthenticationRepositoryProtocol {
     }
     
     public func tryLogin(request: LoginRequestDTO) async throws -> LoginResponseDTO {
-        try await authRemote.login(request: request)
+        try await authRemote.login(request: request) // TODO: put the token into some local source
     }
     
     public func tryRegister(request: RegisterRequestDTO) async throws -> RegisterResponseDTO {

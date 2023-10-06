@@ -28,9 +28,7 @@ public struct RegisterView: View {
             }
             .textFieldStyle(.roundedBorder)
             Button {
-                Task {
-                    await viewModel.tryRegister()
-                }
+                viewModel.tryRegister()
             } label: {
                 Text("Kayıt Ol")
                     .frame(maxWidth: .infinity)

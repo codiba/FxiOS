@@ -111,6 +111,7 @@
 		4A2513F52ACAFB510051BD92 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				4A40C1472ACF0E760056CA16 /* Utilities */,
 				4A2514282ACB37290051BD92 /* Data */,
 				4A2514272ACB37230051BD92 /* Domain */,
 				4A2514192ACB033B0051BD92 /* Scene */,
@@ -238,6 +239,13 @@
 				4A2514B42ACB6F7C0051BD92 /* RegisterResponseDTO.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		4A40C1472ACF0E760056CA16 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
