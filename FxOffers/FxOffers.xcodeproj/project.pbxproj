@@ -7,227 +7,197 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A90BCC32AD038FB006ACA77 /* FxNetwork.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BCC22AD038FB006ACA77 /* FxNetwork.docc */; };
-		4A90BCC92AD038FB006ACA77 /* FxNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90BCBE2AD038FB006ACA77 /* FxNetwork.framework */; };
-		4A90BCCE2AD038FB006ACA77 /* FxNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BCCD2AD038FB006ACA77 /* FxNetworkTests.swift */; };
-		4A90BCCF2AD038FB006ACA77 /* FxNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A90BCC12AD038FB006ACA77 /* FxNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A90BCDA2AD0391F006ACA77 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4A90BCD92AD0391F006ACA77 /* Alamofire */; };
-		4A90BCDE2AD03967006ACA77 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BCDD2AD03967006ACA77 /* NetworkManager.swift */; };
-		4A90BCE02AD03980006ACA77 /* HttpPropertyProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BCDF2AD03980006ACA77 /* HttpPropertyProviderProtocol.swift */; };
-		4A90BCE22AD03991006ACA77 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BCE12AD03991006ACA77 /* NetworkManagerProtocol.swift */; };
-		4A90BCE52AD039AB006ACA77 /* ApiServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BCE42AD039AB006ACA77 /* ApiServiceProvider.swift */; };
-		4A90BCEA2AD039D8006ACA77 /* HTTPHeaderFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BCE92AD039D8006ACA77 /* HTTPHeaderFields.swift */; };
-		4A90BCEC2AD039EE006ACA77 /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BCEB2AD039EE006ACA77 /* Encodable+Dictionary.swift */; };
-		4A90BCEE2AD03AD0006ACA77 /* ServerErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BCED2AD03AD0006ACA77 /* ServerErrorProtocol.swift */; };
+		4A90BD0E2AD1A0AF006ACA77 /* FxOffers.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BD0D2AD1A0AF006ACA77 /* FxOffers.docc */; };
+		4A90BD142AD1A0AF006ACA77 /* FxOffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90BD092AD1A0AF006ACA77 /* FxOffers.framework */; };
+		4A90BD192AD1A0AF006ACA77 /* FxOffersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BD182AD1A0AF006ACA77 /* FxOffersTests.swift */; };
+		4A90BD1A2AD1A0AF006ACA77 /* FxOffers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A90BD0C2AD1A0AF006ACA77 /* FxOffers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A90BD282AD1A1B2006ACA77 /* OfferListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BD272AD1A1B2006ACA77 /* OfferListingView.swift */; };
+		4A90BD2A2AD1A1EF006ACA77 /* OfferListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BD292AD1A1EF006ACA77 /* OfferListingViewModel.swift */; };
+		4A90BD2C2AD1A27A006ACA77 /* PreviewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BD2B2AD1A27A006ACA77 /* PreviewFactory.swift */; };
+		4AF5B7102AD2CE0300E0C64C /* OfferListingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF5B70F2AD2CE0300E0C64C /* OfferListingRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4A90BCCA2AD038FB006ACA77 /* PBXContainerItemProxy */ = {
+		4A90BD152AD1A0AF006ACA77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4A90BCB52AD038FB006ACA77 /* Project object */;
+			containerPortal = 4A90BD002AD1A0AF006ACA77 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4A90BCBD2AD038FB006ACA77;
-			remoteInfo = FxNetwork;
+			remoteGlobalIDString = 4A90BD082AD1A0AF006ACA77;
+			remoteInfo = FxOffers;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A90BCBE2AD038FB006ACA77 /* FxNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FxNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A90BCC12AD038FB006ACA77 /* FxNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FxNetwork.h; sourceTree = "<group>"; };
-		4A90BCC22AD038FB006ACA77 /* FxNetwork.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = FxNetwork.docc; sourceTree = "<group>"; };
-		4A90BCC82AD038FB006ACA77 /* FxNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FxNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A90BCCD2AD038FB006ACA77 /* FxNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FxNetworkTests.swift; sourceTree = "<group>"; };
-		4A90BCDD2AD03967006ACA77 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		4A90BCDF2AD03980006ACA77 /* HttpPropertyProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPropertyProviderProtocol.swift; sourceTree = "<group>"; };
-		4A90BCE12AD03991006ACA77 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
-		4A90BCE42AD039AB006ACA77 /* ApiServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceProvider.swift; sourceTree = "<group>"; };
-		4A90BCE92AD039D8006ACA77 /* HTTPHeaderFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaderFields.swift; sourceTree = "<group>"; };
-		4A90BCEB2AD039EE006ACA77 /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
-		4A90BCED2AD03AD0006ACA77 /* ServerErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerErrorProtocol.swift; sourceTree = "<group>"; };
+		4A90BD092AD1A0AF006ACA77 /* FxOffers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FxOffers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A90BD0C2AD1A0AF006ACA77 /* FxOffers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FxOffers.h; sourceTree = "<group>"; };
+		4A90BD0D2AD1A0AF006ACA77 /* FxOffers.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = FxOffers.docc; sourceTree = "<group>"; };
+		4A90BD132AD1A0AF006ACA77 /* FxOffersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FxOffersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A90BD182AD1A0AF006ACA77 /* FxOffersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FxOffersTests.swift; sourceTree = "<group>"; };
+		4A90BD272AD1A1B2006ACA77 /* OfferListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferListingView.swift; sourceTree = "<group>"; };
+		4A90BD292AD1A1EF006ACA77 /* OfferListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferListingViewModel.swift; sourceTree = "<group>"; };
+		4A90BD2B2AD1A27A006ACA77 /* PreviewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewFactory.swift; sourceTree = "<group>"; };
+		4AF5B70F2AD2CE0300E0C64C /* OfferListingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferListingRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4A90BCBB2AD038FB006ACA77 /* Frameworks */ = {
+		4A90BD062AD1A0AF006ACA77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A90BCDA2AD0391F006ACA77 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A90BCC52AD038FB006ACA77 /* Frameworks */ = {
+		4A90BD102AD1A0AF006ACA77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A90BCC92AD038FB006ACA77 /* FxNetwork.framework in Frameworks */,
+				4A90BD142AD1A0AF006ACA77 /* FxOffers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4A90BCB42AD038FB006ACA77 = {
+		4A90BCFF2AD1A0AF006ACA77 = {
 			isa = PBXGroup;
 			children = (
-				4A90BCC02AD038FB006ACA77 /* FxNetwork */,
-				4A90BCCC2AD038FB006ACA77 /* FxNetworkTests */,
-				4A90BCBF2AD038FB006ACA77 /* Products */,
+				4A90BD0B2AD1A0AF006ACA77 /* FxOffers */,
+				4A90BD172AD1A0AF006ACA77 /* FxOffersTests */,
+				4A90BD0A2AD1A0AF006ACA77 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4A90BCBF2AD038FB006ACA77 /* Products */ = {
+		4A90BD0A2AD1A0AF006ACA77 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A90BCBE2AD038FB006ACA77 /* FxNetwork.framework */,
-				4A90BCC82AD038FB006ACA77 /* FxNetworkTests.xctest */,
+				4A90BD092AD1A0AF006ACA77 /* FxOffers.framework */,
+				4A90BD132AD1A0AF006ACA77 /* FxOffersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4A90BCC02AD038FB006ACA77 /* FxNetwork */ = {
+		4A90BD0B2AD1A0AF006ACA77 /* FxOffers */ = {
 			isa = PBXGroup;
 			children = (
-				4A90BCE62AD039BE006ACA77 /* Utilities */,
-				4A90BCE32AD039A0006ACA77 /* Providers */,
-				4A90BCDC2AD0395E006ACA77 /* Protocol */,
-				4A90BCDB2AD03959006ACA77 /* Manager */,
-				4A90BCC12AD038FB006ACA77 /* FxNetwork.h */,
-				4A90BCC22AD038FB006ACA77 /* FxNetwork.docc */,
+				4A90BD232AD1A0C3006ACA77 /* Presentation */,
+				4A90BD0C2AD1A0AF006ACA77 /* FxOffers.h */,
+				4A90BD0D2AD1A0AF006ACA77 /* FxOffers.docc */,
 			);
-			path = FxNetwork;
+			path = FxOffers;
 			sourceTree = "<group>";
 		};
-		4A90BCCC2AD038FB006ACA77 /* FxNetworkTests */ = {
+		4A90BD172AD1A0AF006ACA77 /* FxOffersTests */ = {
 			isa = PBXGroup;
 			children = (
-				4A90BCCD2AD038FB006ACA77 /* FxNetworkTests.swift */,
+				4A90BD182AD1A0AF006ACA77 /* FxOffersTests.swift */,
 			);
-			path = FxNetworkTests;
+			path = FxOffersTests;
 			sourceTree = "<group>";
 		};
-		4A90BCDB2AD03959006ACA77 /* Manager */ = {
+		4A90BD232AD1A0C3006ACA77 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				4A90BCDD2AD03967006ACA77 /* NetworkManager.swift */,
-				4A90BCE12AD03991006ACA77 /* NetworkManagerProtocol.swift */,
+				4A90BD262AD1A182006ACA77 /* OfferAdding */,
+				4A90BD252AD1A173006ACA77 /* OfferEditing */,
+				4A90BD242AD1A169006ACA77 /* OfferListing */,
+				4A90BD2B2AD1A27A006ACA77 /* PreviewFactory.swift */,
 			);
-			path = Manager;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
-		4A90BCDC2AD0395E006ACA77 /* Protocol */ = {
+		4A90BD242AD1A169006ACA77 /* OfferListing */ = {
 			isa = PBXGroup;
 			children = (
-				4A90BCDF2AD03980006ACA77 /* HttpPropertyProviderProtocol.swift */,
-				4A90BCED2AD03AD0006ACA77 /* ServerErrorProtocol.swift */,
+				4A90BD272AD1A1B2006ACA77 /* OfferListingView.swift */,
+				4A90BD292AD1A1EF006ACA77 /* OfferListingViewModel.swift */,
+				4AF5B70F2AD2CE0300E0C64C /* OfferListingRouter.swift */,
 			);
-			path = Protocol;
+			path = OfferListing;
 			sourceTree = "<group>";
 		};
-		4A90BCE32AD039A0006ACA77 /* Providers */ = {
+		4A90BD252AD1A173006ACA77 /* OfferEditing */ = {
 			isa = PBXGroup;
 			children = (
-				4A90BCE42AD039AB006ACA77 /* ApiServiceProvider.swift */,
 			);
-			path = Providers;
+			path = OfferEditing;
 			sourceTree = "<group>";
 		};
-		4A90BCE62AD039BE006ACA77 /* Utilities */ = {
+		4A90BD262AD1A182006ACA77 /* OfferAdding */ = {
 			isa = PBXGroup;
 			children = (
-				4A90BCE82AD039CE006ACA77 /* Extension */,
-				4A90BCE72AD039C7006ACA77 /* Enum */,
 			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		4A90BCE72AD039C7006ACA77 /* Enum */ = {
-			isa = PBXGroup;
-			children = (
-				4A90BCE92AD039D8006ACA77 /* HTTPHeaderFields.swift */,
-			);
-			path = Enum;
-			sourceTree = "<group>";
-		};
-		4A90BCE82AD039CE006ACA77 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				4A90BCEB2AD039EE006ACA77 /* Encodable+Dictionary.swift */,
-			);
-			path = Extension;
+			path = OfferAdding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4A90BCB92AD038FB006ACA77 /* Headers */ = {
+		4A90BD042AD1A0AF006ACA77 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A90BCCF2AD038FB006ACA77 /* FxNetwork.h in Headers */,
+				4A90BD1A2AD1A0AF006ACA77 /* FxOffers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4A90BCBD2AD038FB006ACA77 /* FxNetwork */ = {
+		4A90BD082AD1A0AF006ACA77 /* FxOffers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A90BCD22AD038FB006ACA77 /* Build configuration list for PBXNativeTarget "FxNetwork" */;
+			buildConfigurationList = 4A90BD1D2AD1A0AF006ACA77 /* Build configuration list for PBXNativeTarget "FxOffers" */;
 			buildPhases = (
-				4A90BCB92AD038FB006ACA77 /* Headers */,
-				4A90BCBA2AD038FB006ACA77 /* Sources */,
-				4A90BCBB2AD038FB006ACA77 /* Frameworks */,
-				4A90BCBC2AD038FB006ACA77 /* Resources */,
+				4A90BD042AD1A0AF006ACA77 /* Headers */,
+				4A90BD052AD1A0AF006ACA77 /* Sources */,
+				4A90BD062AD1A0AF006ACA77 /* Frameworks */,
+				4A90BD072AD1A0AF006ACA77 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FxNetwork;
-			packageProductDependencies = (
-				4A90BCD92AD0391F006ACA77 /* Alamofire */,
-			);
-			productName = FxNetwork;
-			productReference = 4A90BCBE2AD038FB006ACA77 /* FxNetwork.framework */;
+			name = FxOffers;
+			productName = FxOffers;
+			productReference = 4A90BD092AD1A0AF006ACA77 /* FxOffers.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4A90BCC72AD038FB006ACA77 /* FxNetworkTests */ = {
+		4A90BD122AD1A0AF006ACA77 /* FxOffersTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A90BCD52AD038FB006ACA77 /* Build configuration list for PBXNativeTarget "FxNetworkTests" */;
+			buildConfigurationList = 4A90BD202AD1A0AF006ACA77 /* Build configuration list for PBXNativeTarget "FxOffersTests" */;
 			buildPhases = (
-				4A90BCC42AD038FB006ACA77 /* Sources */,
-				4A90BCC52AD038FB006ACA77 /* Frameworks */,
-				4A90BCC62AD038FB006ACA77 /* Resources */,
+				4A90BD0F2AD1A0AF006ACA77 /* Sources */,
+				4A90BD102AD1A0AF006ACA77 /* Frameworks */,
+				4A90BD112AD1A0AF006ACA77 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4A90BCCB2AD038FB006ACA77 /* PBXTargetDependency */,
+				4A90BD162AD1A0AF006ACA77 /* PBXTargetDependency */,
 			);
-			name = FxNetworkTests;
-			productName = FxNetworkTests;
-			productReference = 4A90BCC82AD038FB006ACA77 /* FxNetworkTests.xctest */;
+			name = FxOffersTests;
+			productName = FxOffersTests;
+			productReference = 4A90BD132AD1A0AF006ACA77 /* FxOffersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4A90BCB52AD038FB006ACA77 /* Project object */ = {
+		4A90BD002AD1A0AF006ACA77 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					4A90BCBD2AD038FB006ACA77 = {
+					4A90BD082AD1A0AF006ACA77 = {
 						CreatedOnToolsVersion = 15.0;
 					};
-					4A90BCC72AD038FB006ACA77 = {
+					4A90BD122AD1A0AF006ACA77 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = 4A90BCB82AD038FB006ACA77 /* Build configuration list for PBXProject "FxNetwork" */;
+			buildConfigurationList = 4A90BD032AD1A0AF006ACA77 /* Build configuration list for PBXProject "FxOffers" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -235,29 +205,26 @@
 				en,
 				Base,
 			);
-			mainGroup = 4A90BCB42AD038FB006ACA77;
-			packageReferences = (
-				4A90BCD82AD0391F006ACA77 /* XCRemoteSwiftPackageReference "Alamofire" */,
-			);
-			productRefGroup = 4A90BCBF2AD038FB006ACA77 /* Products */;
+			mainGroup = 4A90BCFF2AD1A0AF006ACA77;
+			productRefGroup = 4A90BD0A2AD1A0AF006ACA77 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4A90BCBD2AD038FB006ACA77 /* FxNetwork */,
-				4A90BCC72AD038FB006ACA77 /* FxNetworkTests */,
+				4A90BD082AD1A0AF006ACA77 /* FxOffers */,
+				4A90BD122AD1A0AF006ACA77 /* FxOffersTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4A90BCBC2AD038FB006ACA77 /* Resources */ = {
+		4A90BD072AD1A0AF006ACA77 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A90BCC62AD038FB006ACA77 /* Resources */ = {
+		4A90BD112AD1A0AF006ACA77 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,41 +234,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4A90BCBA2AD038FB006ACA77 /* Sources */ = {
+		4A90BD052AD1A0AF006ACA77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A90BCDE2AD03967006ACA77 /* NetworkManager.swift in Sources */,
-				4A90BCE02AD03980006ACA77 /* HttpPropertyProviderProtocol.swift in Sources */,
-				4A90BCC32AD038FB006ACA77 /* FxNetwork.docc in Sources */,
-				4A90BCE52AD039AB006ACA77 /* ApiServiceProvider.swift in Sources */,
-				4A90BCE22AD03991006ACA77 /* NetworkManagerProtocol.swift in Sources */,
-				4A90BCEC2AD039EE006ACA77 /* Encodable+Dictionary.swift in Sources */,
-				4A90BCEA2AD039D8006ACA77 /* HTTPHeaderFields.swift in Sources */,
-				4A90BCEE2AD03AD0006ACA77 /* ServerErrorProtocol.swift in Sources */,
+				4A90BD282AD1A1B2006ACA77 /* OfferListingView.swift in Sources */,
+				4A90BD2A2AD1A1EF006ACA77 /* OfferListingViewModel.swift in Sources */,
+				4AF5B7102AD2CE0300E0C64C /* OfferListingRouter.swift in Sources */,
+				4A90BD0E2AD1A0AF006ACA77 /* FxOffers.docc in Sources */,
+				4A90BD2C2AD1A27A006ACA77 /* PreviewFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A90BCC42AD038FB006ACA77 /* Sources */ = {
+		4A90BD0F2AD1A0AF006ACA77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A90BCCE2AD038FB006ACA77 /* FxNetworkTests.swift in Sources */,
+				4A90BD192AD1A0AF006ACA77 /* FxOffersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4A90BCCB2AD038FB006ACA77 /* PBXTargetDependency */ = {
+		4A90BD162AD1A0AF006ACA77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4A90BCBD2AD038FB006ACA77 /* FxNetwork */;
-			targetProxy = 4A90BCCA2AD038FB006ACA77 /* PBXContainerItemProxy */;
+			target = 4A90BD082AD1A0AF006ACA77 /* FxOffers */;
+			targetProxy = 4A90BD152AD1A0AF006ACA77 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4A90BCD02AD038FB006ACA77 /* Debug */ = {
+		4A90BD1B2AD1A0AF006ACA77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -367,7 +331,7 @@
 			};
 			name = Debug;
 		};
-		4A90BCD12AD038FB006ACA77 /* Release */ = {
+		4A90BD1C2AD1A0AF006ACA77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -426,7 +390,7 @@
 			};
 			name = Release;
 		};
-		4A90BCD32AD038FB006ACA77 /* Debug */ = {
+		4A90BD1E2AD1A0AF006ACA77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -440,7 +404,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,7 +412,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codiba.FxNetwork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codiba.FxOffers;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -461,7 +424,7 @@
 			};
 			name = Debug;
 		};
-		4A90BCD42AD038FB006ACA77 /* Release */ = {
+		4A90BD1F2AD1A0AF006ACA77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -475,7 +438,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,7 +446,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codiba.FxNetwork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codiba.FxOffers;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -496,7 +458,7 @@
 			};
 			name = Release;
 		};
-		4A90BCD62AD038FB006ACA77 /* Debug */ = {
+		4A90BD212AD1A0AF006ACA77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -505,7 +467,7 @@
 				DEVELOPMENT_TEAM = K42P7PK4NT;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codiba.FxNetworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codiba.FxOffersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -513,7 +475,7 @@
 			};
 			name = Debug;
 		};
-		4A90BCD72AD038FB006ACA77 /* Release */ = {
+		4A90BD222AD1A0AF006ACA77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -522,7 +484,7 @@
 				DEVELOPMENT_TEAM = K42P7PK4NT;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codiba.FxNetworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codiba.FxOffersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -533,53 +495,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4A90BCB82AD038FB006ACA77 /* Build configuration list for PBXProject "FxNetwork" */ = {
+		4A90BD032AD1A0AF006ACA77 /* Build configuration list for PBXProject "FxOffers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A90BCD02AD038FB006ACA77 /* Debug */,
-				4A90BCD12AD038FB006ACA77 /* Release */,
+				4A90BD1B2AD1A0AF006ACA77 /* Debug */,
+				4A90BD1C2AD1A0AF006ACA77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A90BCD22AD038FB006ACA77 /* Build configuration list for PBXNativeTarget "FxNetwork" */ = {
+		4A90BD1D2AD1A0AF006ACA77 /* Build configuration list for PBXNativeTarget "FxOffers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A90BCD32AD038FB006ACA77 /* Debug */,
-				4A90BCD42AD038FB006ACA77 /* Release */,
+				4A90BD1E2AD1A0AF006ACA77 /* Debug */,
+				4A90BD1F2AD1A0AF006ACA77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A90BCD52AD038FB006ACA77 /* Build configuration list for PBXNativeTarget "FxNetworkTests" */ = {
+		4A90BD202AD1A0AF006ACA77 /* Build configuration list for PBXNativeTarget "FxOffersTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4A90BCD62AD038FB006ACA77 /* Debug */,
-				4A90BCD72AD038FB006ACA77 /* Release */,
+				4A90BD212AD1A0AF006ACA77 /* Debug */,
+				4A90BD222AD1A0AF006ACA77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		4A90BCD82AD0391F006ACA77 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = exactVersion;
-				version = 5.8.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		4A90BCD92AD0391F006ACA77 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4A90BCD82AD0391F006ACA77 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 4A90BCB52AD038FB006ACA77 /* Project object */;
+	rootObject = 4A90BD002AD1A0AF006ACA77 /* Project object */;
 }

@@ -56,7 +56,6 @@
 		4A2514322ACB38550051BD92 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
 		4A2514342ACB38920051BD92 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		4A2514362ACB38970051BD92 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
-		4A2514912ACB45640051BD92 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A25149F2ACB51C90051BD92 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		4A2514A42ACB6DC50051BD92 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		4A2514A62ACB6DD70051BD92 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
@@ -114,7 +113,7 @@
 				4A40C1472ACF0E760056CA16 /* Utilities */,
 				4A2514282ACB37290051BD92 /* Data */,
 				4A2514272ACB37230051BD92 /* Domain */,
-				4A2514192ACB033B0051BD92 /* Scene */,
+				4A2514192ACB033B0051BD92 /* Presentation */,
 				4A2513F62ACAFB510051BD92 /* Authentication.h */,
 				4A2513F72ACAFB510051BD92 /* Authentication.docc */,
 			);
@@ -149,14 +148,14 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
-		4A2514192ACB033B0051BD92 /* Scene */ = {
+		4A2514192ACB033B0051BD92 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				4A25140E2ACAFB750051BD92 /* Register */,
 				4A25140D2ACAFB670051BD92 /* Login */,
 				4A2514DF2ACB78060051BD92 /* ViewFactory.swift */,
 			);
-			path = Scene;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		4A2514272ACB37230051BD92 /* Domain */ = {
@@ -209,7 +208,6 @@
 		4A2514902ACB45640051BD92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A2514912ACB45640051BD92 /* Core.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -536,7 +534,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,6 +546,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codiba.Authentication;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -569,7 +570,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -581,6 +582,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codiba.Authentication;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

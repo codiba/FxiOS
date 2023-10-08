@@ -15,7 +15,7 @@ final class LoginRouter: BaseRouter, LoginRouterProtocol {
     }
     
     func navigateHome() {
-        present(Coordinators.register)
+        present(Coordinators.offerListing)
     }
 }
 

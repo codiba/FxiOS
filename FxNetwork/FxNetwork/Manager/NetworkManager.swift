@@ -10,7 +10,7 @@ import Alamofire
 import Combine
 import Foundation
 
-public final class NetworkManager: NetworkMananagerProtocol {
+public final class NetworkManager: NetworkManagerProtocol {
     
     private var session: Session
     private let decoder = JSONDecoder()

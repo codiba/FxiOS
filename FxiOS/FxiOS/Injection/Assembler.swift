@@ -10,9 +10,11 @@ import Swinject
 extension Assembler {
     static let shared: Assembler = {
         let assembler = Assembler()
+        assembler.apply(assembly: NetworkProviderAssembly())
         assembler.apply(assembly: AuthenticationAssembler())
-        assembler.apply(assembly: RegisterAssembler())
-        assembler.apply(assembly: LoginAssembler())
+        assembler.apply(assembly: RegisterAssembly())
+        assembler.apply(assembly: LoginAssembly())
+        assembler.apply(assembly: FxOfferListingAssembly())
         return assembler
     }()
 }

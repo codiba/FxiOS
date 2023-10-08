@@ -11,8 +11,8 @@
 		4A2514212ACB04A90051BD92 /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = 4A2514202ACB04A90051BD92 /* SwinjectAutoregistration */; };
 		4A2514262ACB0E090051BD92 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514252ACB0E090051BD92 /* LoginCoordinator.swift */; };
 		4A25149E2ACB48370051BD92 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25149D2ACB48370051BD92 /* Assembler.swift */; };
-		4A2514A32ACB52DF0051BD92 /* LoginAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514A22ACB52DF0051BD92 /* LoginAssembler.swift */; };
-		4A2514B72ACB70CF0051BD92 /* RegisterAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514B62ACB70CF0051BD92 /* RegisterAssembler.swift */; };
+		4A2514A32ACB52DF0051BD92 /* LoginAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514A22ACB52DF0051BD92 /* LoginAssembly.swift */; };
+		4A2514B72ACB70CF0051BD92 /* RegisterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514B62ACB70CF0051BD92 /* RegisterAssembly.swift */; };
 		4A2514BC2ACB70F90051BD92 /* AuthError+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514BB2ACB70F90051BD92 /* AuthError+init.swift */; };
 		4A2514BF2ACB71220051BD92 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514BE2ACB71220051BD92 /* FirebaseAuthManager.swift */; };
 		4A2514C12ACB71610051BD92 /* AuthenticationAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514C02ACB71610051BD92 /* AuthenticationAssembler.swift */; };
@@ -40,6 +40,11 @@
 		4A90BCFA2AD03E90006ACA77 /* Authentication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90BCF72AD03E90006ACA77 /* Authentication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4A90BCFB2AD03E90006ACA77 /* FxNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90BCF82AD03E90006ACA77 /* FxNetwork.framework */; };
 		4A90BCFC2AD03E90006ACA77 /* FxNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A90BCF82AD03E90006ACA77 /* FxNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4A90BCFE2AD1954D006ACA77 /* NetworkProviderAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90BCFD2AD1954D006ACA77 /* NetworkProviderAssembly.swift */; };
+		4AF5B70E2AD2CDD000E0C64C /* FxOfferListingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF5B70D2AD2CDD000E0C64C /* FxOfferListingCoordinator.swift */; };
+		4AF5B7132AD2CEAE00E0C64C /* FxOfferListingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF5B7122AD2CEAE00E0C64C /* FxOfferListingAssembly.swift */; };
+		4AF5B7152AD2CF5700E0C64C /* FxOffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF5B7142AD2CF5700E0C64C /* FxOffers.framework */; };
+		4AF5B7162AD2CF5700E0C64C /* FxOffers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF5B7142AD2CF5700E0C64C /* FxOffers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +54,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4AF5B7162AD2CF5700E0C64C /* FxOffers.framework in Embed Frameworks */,
 				4A90BCFA2AD03E90006ACA77 /* Authentication.framework in Embed Frameworks */,
 				4A90BCFC2AD03E90006ACA77 /* FxNetwork.framework in Embed Frameworks */,
 			);
@@ -60,8 +66,8 @@
 /* Begin PBXFileReference section */
 		4A2514252ACB0E090051BD92 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		4A25149D2ACB48370051BD92 /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
-		4A2514A22ACB52DF0051BD92 /* LoginAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAssembler.swift; sourceTree = "<group>"; };
-		4A2514B62ACB70CF0051BD92 /* RegisterAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAssembler.swift; sourceTree = "<group>"; };
+		4A2514A22ACB52DF0051BD92 /* LoginAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAssembly.swift; sourceTree = "<group>"; };
+		4A2514B62ACB70CF0051BD92 /* RegisterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAssembly.swift; sourceTree = "<group>"; };
 		4A2514BB2ACB70F90051BD92 /* AuthError+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthError+init.swift"; sourceTree = "<group>"; };
 		4A2514BE2ACB71220051BD92 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 		4A2514C02ACB71610051BD92 /* AuthenticationAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationAssembler.swift; sourceTree = "<group>"; };
@@ -85,6 +91,10 @@
 		4A90BCF22AD03D0E006ACA77 /* DefaultHttpPropertyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHttpPropertyProvider.swift; sourceTree = "<group>"; };
 		4A90BCF72AD03E90006ACA77 /* Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A90BCF82AD03E90006ACA77 /* FxNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FxNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A90BCFD2AD1954D006ACA77 /* NetworkProviderAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderAssembly.swift; sourceTree = "<group>"; };
+		4AF5B70D2AD2CDD000E0C64C /* FxOfferListingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FxOfferListingCoordinator.swift; sourceTree = "<group>"; };
+		4AF5B7122AD2CEAE00E0C64C /* FxOfferListingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FxOfferListingAssembly.swift; sourceTree = "<group>"; };
+		4AF5B7142AD2CF5700E0C64C /* FxOffers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FxOffers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A90BCFB2AD03E90006ACA77 /* FxNetwork.framework in Frameworks */,
+				4AF5B7152AD2CF5700E0C64C /* FxOffers.framework in Frameworks */,
 				4A40B41E2ACAEB1D00BC6256 /* FirebaseAnalyticsSwift in Frameworks */,
 				4A25141E2ACB048A0051BD92 /* Swinject in Frameworks */,
 				4A2514212ACB04A90051BD92 /* SwinjectAutoregistration in Frameworks */,
@@ -110,6 +121,7 @@
 		4A2514132ACB02A00051BD92 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4AF5B7142AD2CF5700E0C64C /* FxOffers.framework */,
 				4A90BCF72AD03E90006ACA77 /* Authentication.framework */,
 				4A90BCF82AD03E90006ACA77 /* FxNetwork.framework */,
 			);
@@ -119,6 +131,7 @@
 		4A2514222ACB0A680051BD92 /* Injection */ = {
 			isa = PBXGroup;
 			children = (
+				4AF5B7112AD2CE9C00E0C64C /* FxOffers */,
 				4A90BCEF2AD03CE1006ACA77 /* Network */,
 				4A2514A12ACB52CF0051BD92 /* Authentication */,
 				4A25149D2ACB48370051BD92 /* Assembler.swift */,
@@ -129,8 +142,8 @@
 		4A2514A12ACB52CF0051BD92 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				4A2514A22ACB52DF0051BD92 /* LoginAssembler.swift */,
-				4A2514B62ACB70CF0051BD92 /* RegisterAssembler.swift */,
+				4A2514A22ACB52DF0051BD92 /* LoginAssembly.swift */,
+				4A2514B62ACB70CF0051BD92 /* RegisterAssembly.swift */,
 				4A2514C02ACB71610051BD92 /* AuthenticationAssembler.swift */,
 			);
 			path = Authentication;
@@ -157,6 +170,7 @@
 		4A2514C22ACB71AE0051BD92 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				4AF5B70C2AD2CDC000E0C64C /* FxOffers */,
 				4A2514C52ACB71E60051BD92 /* Authentication */,
 				4A2514C92ACB721A0051BD92 /* Coordinators.swift */,
 			);
@@ -247,6 +261,7 @@
 		4A90BCEF2AD03CE1006ACA77 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				4A90BCFD2AD1954D006ACA77 /* NetworkProviderAssembly.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -266,6 +281,22 @@
 				4A90BCF22AD03D0E006ACA77 /* DefaultHttpPropertyProvider.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		4AF5B70C2AD2CDC000E0C64C /* FxOffers */ = {
+			isa = PBXGroup;
+			children = (
+				4AF5B70D2AD2CDD000E0C64C /* FxOfferListingCoordinator.swift */,
+			);
+			path = FxOffers;
+			sourceTree = "<group>";
+		};
+		4AF5B7112AD2CE9C00E0C64C /* FxOffers */ = {
+			isa = PBXGroup;
+			children = (
+				4AF5B7122AD2CEAE00E0C64C /* FxOfferListingAssembly.swift */,
+			);
+			path = FxOffers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,14 +392,17 @@
 				4A2514C12ACB71610051BD92 /* AuthenticationAssembler.swift in Sources */,
 				4A2514BF2ACB71220051BD92 /* FirebaseAuthManager.swift in Sources */,
 				4A25149E2ACB48370051BD92 /* Assembler.swift in Sources */,
-				4A2514B72ACB70CF0051BD92 /* RegisterAssembler.swift in Sources */,
+				4A90BCFE2AD1954D006ACA77 /* NetworkProviderAssembly.swift in Sources */,
+				4A2514B72ACB70CF0051BD92 /* RegisterAssembly.swift in Sources */,
 				4A2514D82ACB75E30051BD92 /* BaseRouter.swift in Sources */,
 				4A40B4092ACAE83400BC6256 /* SceneDelegate.swift in Sources */,
+				4AF5B70E2AD2CDD000E0C64C /* FxOfferListingCoordinator.swift in Sources */,
 				4A2514BC2ACB70F90051BD92 /* AuthError+init.swift in Sources */,
 				4A2514DA2ACB75F40051BD92 /* Router.swift in Sources */,
 				4A2514CA2ACB721A0051BD92 /* Coordinators.swift in Sources */,
+				4AF5B7132AD2CEAE00E0C64C /* FxOfferListingAssembly.swift in Sources */,
 				4A2514D42ACB75180051BD92 /* BaseCoordinator.swift in Sources */,
-				4A2514A32ACB52DF0051BD92 /* LoginAssembler.swift in Sources */,
+				4A2514A32ACB52DF0051BD92 /* LoginAssembly.swift in Sources */,
 				4A2514CD2ACB723D0051BD92 /* View+AnyView.swift in Sources */,
 				4A2514C82ACB71FD0051BD92 /* RegisterCoordinator.swift in Sources */,
 				4A2514D22ACB74FB0051BD92 /* HostingViewController.swift in Sources */,
@@ -521,7 +555,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -553,7 +587,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -10,6 +10,7 @@ import Foundation
 enum Coordinators: CoordinatorRepresentable, GetResolver {
     case login
     case register
+    case offerListing
     
     var coordinator: Coordinator {
         switch self {
@@ -17,6 +18,8 @@ enum Coordinators: CoordinatorRepresentable, GetResolver {
             return resolve(LoginCoordinator.self)
         case .register:
             return resolve(RegisterCoordinator.self)
+        case .offerListing:
+            return resolve(FxOfferListingCoordinator.self)
         }
     }
     

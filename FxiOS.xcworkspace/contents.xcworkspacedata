@@ -5,6 +5,9 @@
       location = "group:FxNetwork/FxNetwork.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:FxOffers/FxOffers.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Authentication/Authentication.xcodeproj">
    </FileRef>
    <FileRef

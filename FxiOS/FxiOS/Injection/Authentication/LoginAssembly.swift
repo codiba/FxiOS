@@ -9,7 +9,7 @@ import SwinjectAutoregistration
 import Swinject
 import Authentication
 
-struct LoginAssembler: Assembly {
+struct LoginAssembly: Assembly {
     func assemble(container: Swinject.Container) {
         container.autoregister(LoginViewModel.self, initializer: LoginViewModel.init).inObjectScope(.weak)
         
