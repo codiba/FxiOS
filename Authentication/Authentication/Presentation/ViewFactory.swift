@@ -12,7 +12,7 @@ struct ViewFactory {
         
         let apiAdapter = MockApiAdapter()
         let repository = AuthenticationRepository(authRemote: apiAdapter)
-        let loginUseCase = LoginUseCase(repository: repository)
+        let loginUseCase = LoginWithEmailAndPasswordUseCase(repository: repository)
         let viewModel = LoginViewModel(loginUseCase: loginUseCase)
         let view = LoginView(viewModel: viewModel, router: MockLoginRouter())
         

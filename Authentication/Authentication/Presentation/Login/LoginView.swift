@@ -53,17 +53,32 @@ public struct LoginView: View {
             }
             .padding(.horizontal, 20)
             
-            Button(action: {
-                viewModel.tryLogin()
-            }) {
-                Text("Giriş Yap")
-                    .foregroundColor(.white)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.blue.opacity(0.7))
-                    .cornerRadius(10)
+            VStack {
+                Button(action: {
+                    viewModel.tryLogin()
+                }) {
+                    Text("Giriş Yap")
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue.opacity(0.7))
+                        .cornerRadius(10)
+                }
+                .padding(.top, 20)
+                
+                HStack {
+                    Button(action: {
+                        viewModel.signInWithGoogle()
+                    }) {
+                       Image(systemName: "folder.circle")
+                            .resizable()
+                            .background(.white)
+                            .frame(width: 45, height: 45)
+                            .clipShape(RoundedRectangle(cornerRadius: 13))
+                    }
+                    .padding(.top, 20)
+                }
             }
-            .padding(.top, 20)
             
             Button(action: {
                 router.navigateRegister()

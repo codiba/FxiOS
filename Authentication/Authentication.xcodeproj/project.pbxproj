@@ -13,7 +13,7 @@
 		4A2514042ACAFB520051BD92 /* Authentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A2513F62ACAFB510051BD92 /* Authentication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A2514102ACAFB8F0051BD92 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25140F2ACAFB8F0051BD92 /* LoginView.swift */; };
 		4A2514122ACAFCE00051BD92 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514112ACAFCE00051BD92 /* LoginViewModel.swift */; };
-		4A25141B2ACB034A0051BD92 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25141A2ACB034A0051BD92 /* LoginUseCase.swift */; };
+		4A25141B2ACB034A0051BD92 /* LoginWithEmailAndPasswordUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25141A2ACB034A0051BD92 /* LoginWithEmailAndPasswordUseCase.swift */; };
 		4A25142F2ACB380B0051BD92 /* LoginRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25142E2ACB380B0051BD92 /* LoginRequestDTO.swift */; };
 		4A2514312ACB38300051BD92 /* LoginResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514302ACB38300051BD92 /* LoginResponseDTO.swift */; };
 		4A2514332ACB38550051BD92 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2514322ACB38550051BD92 /* AuthenticationRepository.swift */; };
@@ -50,7 +50,7 @@
 		4A2514022ACAFB520051BD92 /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
 		4A25140F2ACAFB8F0051BD92 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4A2514112ACAFCE00051BD92 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		4A25141A2ACB034A0051BD92 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		4A25141A2ACB034A0051BD92 /* LoginWithEmailAndPasswordUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithEmailAndPasswordUseCase.swift; sourceTree = "<group>"; };
 		4A25142E2ACB380B0051BD92 /* LoginRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestDTO.swift; sourceTree = "<group>"; };
 		4A2514302ACB38300051BD92 /* LoginResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseDTO.swift; sourceTree = "<group>"; };
 		4A2514322ACB38550051BD92 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				4A25142C2ACB37D80051BD92 /* Model */,
-				4A25141A2ACB034A0051BD92 /* LoginUseCase.swift */,
+				4A25141A2ACB034A0051BD92 /* LoginWithEmailAndPasswordUseCase.swift */,
 				4A2514A92ACB6EE80051BD92 /* RegisterUseCase.swift */,
 			);
 			path = Domain;
@@ -369,7 +369,7 @@
 				4A2514122ACAFCE00051BD92 /* LoginViewModel.swift in Sources */,
 				4A2514A72ACB6DD70051BD92 /* RegisterViewModel.swift in Sources */,
 				4A25142F2ACB380B0051BD92 /* LoginRequestDTO.swift in Sources */,
-				4A25141B2ACB034A0051BD92 /* LoginUseCase.swift in Sources */,
+				4A25141B2ACB034A0051BD92 /* LoginWithEmailAndPasswordUseCase.swift in Sources */,
 				4A2514D62ACB756C0051BD92 /* LoginRouter.swift in Sources */,
 				4A2514DE2ACB77540051BD92 /* RegisterRouter.swift in Sources */,
 				4A2514B52ACB6F7C0051BD92 /* RegisterResponseDTO.swift in Sources */,

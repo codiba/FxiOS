@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseCore
 import FirebaseMessaging
+import GoogleSignIn
 
 @main
 final class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -64,8 +65,11 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
       print("APNs token retrieved: \(deviceToken)")
       Messaging.messaging().apnsToken = deviceToken
     }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance.handle(url)
+    }
 }
-
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
     // Receive displayed notifications for iOS 10 devices.

@@ -7,6 +7,13 @@
 
 import UIKit
 
+// TODO: remove
+import FirebaseCore
+import GoogleSignIn
+import FirebaseAuth
+import FirebaseGoogleAuthUI
+// --
+
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate, GetResolver {
 
     var window: UIWindow?
@@ -29,6 +36,34 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate, GetResolver {
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         self.window = window
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+            self.sign()
+        })
+    }
+    
+    // TODO: Will be remove from here and create new usecase that triggered from the loginView signInWithGoogle button
+    func sign() {
+        let topViewController = window!.rootViewController!
+        
+        if let clientID = FirebaseApp.app()?.options.clientID {
+            let config = GIDConfiguration(clientID: clientID)
+
+            GIDSignIn.sharedInstance.signIn(with:config, presenting: topViewController) { result, error in
+                guard let user = result?.authentication,
+                      let idToken = user.idToken
+                else {
+                    return
+                }
+
+                let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+                                                               accessToken: user.accessToken)
+                
+                Auth.auth().signIn(with: credential) { result, error in
+                    
+                }
+            }
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -16,7 +16,7 @@ struct AuthenticationAssembler: Assembly {
         
         container.autoregister(AuthenticationRepositoryProtocol.self, initializer: AuthenticationRepository.init).inObjectScope(.weak)
 
-        container.autoregister(LoginUseCaseProtocol.self, initializer: LoginUseCase.init).inObjectScope(.weak)
+        container.autoregister(LoginUseCaseProtocol.self, initializer: LoginWithEmailAndPasswordUseCase.init).inObjectScope(.weak)
 
         container.autoregister(RegisterUseCaseProtocol.self, initializer: RegisterUseCase.init).inObjectScope(.weak)
     }

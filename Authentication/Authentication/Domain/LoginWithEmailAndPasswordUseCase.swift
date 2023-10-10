@@ -1,5 +1,5 @@
 //
-//  LoginUseCase.swift
+//  LoginWithEmailAndPasswordUseCase.swift
 //  Authentication
 //
 //  Created by Salihcan Kahya on 2.10.2023.
@@ -19,7 +19,7 @@ public protocol LoginUseCaseProtocol {
     func execute(request: LoginRequest) async -> Result<Void, LoginError>
 }
 
-public struct LoginUseCase: LoginUseCaseProtocol {
+public struct LoginWithEmailAndPasswordUseCase: LoginUseCaseProtocol {
     private let repository: AuthenticationRepositoryProtocol
     
     public init(repository: AuthenticationRepositoryProtocol) {

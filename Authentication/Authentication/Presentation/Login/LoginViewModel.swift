@@ -23,7 +23,7 @@ public final class LoginViewModel: ObservableObject {
         self.loginUseCase = loginUseCase
     }
     
-    public func tryLogin() {
+    func tryLogin() {
         Task {
             let response = await loginUseCase.execute(request: .init(email: email, password: password))
             
@@ -38,5 +38,9 @@ public final class LoginViewModel: ObservableObject {
                 }
             }
         }
+    }
+    
+    func signInWithGoogle() {
+        
     }
 }

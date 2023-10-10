@@ -30,7 +30,6 @@ public struct RegisterUseCase: RegisterUseCaseProtocol {
     public func execute(request: RegisterRequest) async -> Result<Void, RegisterError> {
         
         do {
-            
             guard !request.email.isEmpty else {
                 return .failure(.emailEmpty)
             }
